@@ -8,12 +8,20 @@
 </head>
 <body>
      <script>
-              
-        var salario = "50000";
-        var aumento = 0.9;
-        var salarioFormatado = parseFloat(salario);
-        var novoSalario = ( salario * aumento) /100+ salarioFormatado;
-        console.log( "Seu novo salário é: " +novoSalario );
+            function reverseString(str) {
+            
+                var palavra = "";
+
+
+                for (var i = str.length - 1; i >= 0; i--) { 
+                    palavra += str[i]; 
+                }
+
+                 return palavra;
+            }
+            
+           console.log( reverseString('hello'));
+
      </script>
 </body>
 </html>
